@@ -186,7 +186,7 @@ function imdb() {
             console.log("");
         } else {
 
-            //IF THERE IS MOVIE NETERED BY THE USER IT WILL DEFAULT TO THE MOVIE PRELAODED HERE MR. NOBODY.    	
+            //IF THERE IS MOVIE NETERED BY THE USER IT WILL DEFAULT TO THE MOVIE PRELAODED HERE MR. NOBODY.     
             var request = require('request');
 
             // RUN A REQUEST TO THE OMDB API WITH THE MOVIE SPECIFIED (CAN BE MULTI WORD MOVIES)
@@ -238,50 +238,36 @@ function dwis() {
         // for (var i = 0; i < data.length; i++) {
         //     result = data[i];
         // }
-        if (data.length == 2){
-        	command = data[0];
-        	parameter = data[1];
-        	console.log(command);
-        	console.log(parameter);
+        if (data.length == 2) {
+            command = data[0];
+            parameter = data[1];
+            // console.log(command);
+            // console.log(parameter);
         }
         // PRINTS THE CONTENTS OF DATA WHICH IS IN RESULT 
         //console.log(result);
 
         // if (result != false) {
-        	parameter = parameter.replace('"','');
-        	parameter = parameter.replace('"','');
-        	console.log(parameter);
+        parameter = parameter.replace('"', '');
+        parameter = parameter.replace('"', '');
+        // console.log(parameter);
 
-            switch (command) {
-                case 'my-tweets':
-                	value = parameter;
-                    twitter();
-                    break;
+        switch (command) {
+            case 'my-tweets':
+                value = parameter;
+                twitter();
+                break;
 
-                case 'spotify-this-song':
-                	value = parameter;
-                    spotify();
-                    break;
+            case 'spotify-this-song':
+                value = parameter;
+                spotify();
+                break;
 
-                case 'movie-this':
-                	value = parameter;
-                    imdb();
-                    break;
-            }
-      
+            case 'movie-this':
+                value = parameter;
+                imdb();
+                break;
+        }
+
     });
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
