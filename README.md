@@ -55,11 +55,11 @@ Liri will work four different ways which can take in one of the following comman
 
 ##What Each Command Should Do
 
-`node liri.js my-tweets` '<twitter user name here>'
+node liri.js my-tweets `<twitter user name here>`
 * This will show your last 20 tweets and when they were created at in your terminal/bash window.
 * If no username is entered my default twitter will show.
 
-`node liri.js spotify-this-song` '<song name here>'
+node liri.js spotify-this-song `<song name here>`
 * This will show the following information about the song in your terminal/bash window
 * Artist(s)
 * The song's name
@@ -68,7 +68,7 @@ Liri will work four different ways which can take in one of the following comman
 * if no song is provided then your program will default to
 * "The Sign" by Ace of Base
 
-`node liri.js movie-this` '<movie name here>'
+node liri.js movie-this `<movie name here>`
 * This will output the following information to your terminal/bash window:
 * Title of the movie.
 * Year the movie came out.
@@ -83,5 +83,5 @@ Liri will work four different ways which can take in one of the following comman
 * If you haven't watched "Mr. Nobody," then you should: http://www.imdb.com/title/tt0485947/
 * It's on Netflix!
 
-`node liri.js do-what-it-says`
+node liri.js do-what-it-says
 * This uses the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI's commands.
