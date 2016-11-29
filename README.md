@@ -32,7 +32,6 @@ LIRI is like iPhone's SIRI. However, while SIRI is a Speech Interpretation and R
 * NPM Spotify [Spotify](https://www.npmjs.com/package/spotify).
 * NPM IMDB    [OMDB API](http://www.omdbapi.com).
 * Ajax 
-* IMDB API
 
 ## License
 
